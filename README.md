@@ -1,3 +1,6 @@
+## Hosted on:
+[http://react-app-s3bucket.s3-website-ap-southeast-1.amazonaws.com/](http://react-app-s3bucket.s3-website-ap-southeast-1.amazonaws.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
