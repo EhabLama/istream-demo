@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Overview from "../components/OverviewComponent"
 import Application from "../components/ApplicationComponent.jsx"
-const $ = window.$;
+
+//const $ = window.$;
 
 //var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
 
@@ -20,19 +21,20 @@ const routes = [
 export default class Dashboard extends React.PureComponent{
 
 
+  //TRANSITIN ANIMATION:
 
-  componentDidMount(){
+  // componentDidMount(){
     
-      $(".dashboard-page").addClass("ng-enter");
-      setTimeout(function(){
-        $(".dashboard-page").addClass("ng-enter-active");
-      }, 300);
-      setTimeout(function(){
-        $(".dashboard-page").removeClass("ng-enter");
-        $(".dashboard-page").removeClass("ng-enter-active");
+  //     $(".dashboard-page").addClass("ng-enter");
+  //     setTimeout(function(){
+  //       $(".dashboard-page").addClass("ng-enter-active");
+  //     }, 300);
+  //     setTimeout(function(){
+  //       $(".dashboard-page").removeClass("ng-enter");
+  //       $(".dashboard-page").removeClass("ng-enter-active");
         
-      }, 600);
-    }
+  //     }, 600);
+  //   }
   
 
 

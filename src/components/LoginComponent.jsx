@@ -2,6 +2,9 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 export default class HomeComponent extends React.PureComponent{
+
+     //TRANSITIN ANIMATION:
+     
     // componentDidMount(){
     //     $(".login-page").addClass("ng-enter");
     //     setTimeout(function(){

@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const $ = window.$;
+
+//const $ = window.$;
 
 export default class HomeComponent extends React.PureComponent{
 
-	componentDidMount(){
+	 //TRANSITIN ANIMATION:
+
+	// componentDidMount(){
 		
-			$(".overview-page").addClass("ng-enter");
-			setTimeout(function(){
-				$(".overview-page").addClass("ng-enter-active");
-			}, 300);
-			setTimeout(function(){
-				$(".overview-page").removeClass("ng-enter");
-				$(".overview-page").removeClass("ng-enter-active");
-			}, 600);
-		}
+	// 		$(".overview-page").addClass("ng-enter");
+	// 		setTimeout(function(){
+	// 			$(".overview-page").addClass("ng-enter-active");
+	// 		}, 300);
+	// 		setTimeout(function(){
+	// 			$(".overview-page").removeClass("ng-enter");
+	// 			$(".overview-page").removeClass("ng-enter-active");
+	// 		}, 600);
+	// 	}
 	
 
 	render(){
