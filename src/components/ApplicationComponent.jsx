@@ -95,7 +95,6 @@ export default class ApplicationComponent extends React.PureComponent {
 			jsxpage =
 				<>
 					<div className="jumbotron">
-						<hr style={{ height: 1, visibility: 'hidden' }} />
 						<h3 style={{ marginBottom: 30 }}>Enter your data type and source:</h3>
 						<form >
 							<div className="form-group row">
@@ -212,8 +211,6 @@ export default class ApplicationComponent extends React.PureComponent {
 				<>
 					<div className="jumbotron">
 						<h3 style={{ marginBottom: 30 }}>Enter destination Address:</h3>
-						<br />
-						<br />
 						<form >
 							<div className="form-group row">
 								<div className="col-sm-1" >
