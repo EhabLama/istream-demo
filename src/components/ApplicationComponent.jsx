@@ -60,29 +60,29 @@ export default class ApplicationComponent extends React.PureComponent {
 
 	//TRANSITIN ANIMATION:
 
-	//  componentDidMount(){
-	//  	$(".dropdown-menu li a").click(function(){
-	// 	$(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
-	// 	$(this).parents(".dropdown").find('.btn').val($(this).data('value'));
-	// 	});
+	 componentDidMount(){
+	 	$(".dropdown-menu li a").click(function(){
+		$(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+		$(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+		});
 
-	// 	$(".dropdown-menu 2 li a").click(function(){
-	// 		$(this).parents(".dropdown 2").find('.btn 2').html($(this).text() + ' <span class="caret"></span>');
-	// 		$(this).parents(".dropdown 2").find('.btn').val($(this).data('value'));
-	// 		});
-
-
-	// 	$(".reports-page").addClass("ng-enter");
-	// 	setTimeout(function(){
-	// 		$(".reports-page").addClass("ng-enter-active");
-	// 	}, 300);
-	// 	setTimeout(function(){
-	// 		$(".reports-page").removeClass("ng-enter");
-	// 		$(".reports-page").removeClass("ng-enter-active");
-	// 	}, 600);
+		$(".dropdown-menu 2 li a").click(function(){
+			$(this).parents(".dropdown 2").find('.btn 2').html($(this).text() + ' <span class="caret"></span>');
+			$(this).parents(".dropdown 2").find('.btn').val($(this).data('value'));
+			});
 
 
-	//  }
+		$(".reports-page").addClass("ng-enter");
+		setTimeout(function(){
+			$(".reports-page").addClass("ng-enter-active");
+		}, 300);
+		setTimeout(function(){
+			$(".reports-page").removeClass("ng-enter");
+			$(".reports-page").removeClass("ng-enter-active");
+		}, 600);
+
+
+	 }
 
 
 	render() {
