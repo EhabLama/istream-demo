@@ -51,7 +51,7 @@ export default class Dashboard extends React.PureComponent{
               <div className="col-sm-3 col-md-2 sidebar"> 
                 <div className="text-center"> 
                   <h2 className="brand">iStream 360<br /></h2>
-                  <img src="/account-holder1.png" className="user-avatar" alt="user avatar"/>
+                  <img src="/user-icon.png" className="user-avatar" alt="user avatar"/>
                   <br /> 
                   <a href="/login" className="btn btn-white btn-outline btn-rounded btn-sm">Logout</a> 
                 </div> 

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Select from 'react-select';
-import { fileFormat, dataType, anonType } from "../data/dropdown-data"
 import { NotificationContainer, NotificationManager } from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
+import AppPage1 from "./AppPage1"
+import AppPage2 from "./AppPage2"
+import AppPage3 from "./AppPage3"
 
 //const $ = window.$;
 
@@ -56,8 +57,6 @@ export default class ApplicationComponent extends React.PureComponent {
 	};
 
 
-
-
 	//TRANSITIN ANIMATION:
 
 	//  componentDidMount(){
@@ -81,7 +80,6 @@ export default class ApplicationComponent extends React.PureComponent {
 	// 		$(".reports-page").removeClass("ng-enter-active");
 	// 	}, 600);
 
-
 	//  }
 
 
@@ -95,34 +93,13 @@ export default class ApplicationComponent extends React.PureComponent {
 			jsxpage =
 				<>
 					<div className="jumbotron">
-						<hr style={{ height: 1, visibility: 'hidden' }} />
-						<h3 style={{ marginBottom: 30 }}>Enter your data type and source:</h3>
-						<form >
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<label className="col-form-label" >
-										File Format:
-									</label>
-								</div>
-								<div className="col-sm-4">
-									<Select
-										options={fileFormat}
-									/>
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2">
-									<label style={{ minWidth: 50 }}>Srouce Link Address:</label>
-								</div>
-								<div className="col-sm-4">
-									<input className="form-control" placeholder="Enter link address" />
-								</div>
-							</div>
-						</form>
+						<br/>
+						<h3>Enter your data type and source:</h3>
+						<br/>
+						<AppPage1 />
 						<div className="next-col">
 							<button className="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Next</button>
 						</div>
-
 					</div>
 				</>
 		}
@@ -132,163 +109,13 @@ export default class ApplicationComponent extends React.PureComponent {
 			jsxpage =
 				<>
 					<div className="jumbotron">
-						<h3 style={{ marginBottom: 30 }}>Choose your data settings:</h3>
-						<form >
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										XDRID
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										bigint
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										XDRTYPE
-								</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										int
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										SessionStartTime
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										varchar(255)
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										SessionEndTime
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										varchar(255)
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										Status
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										int
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										ErrorCode
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										int
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										ClientAdress
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										varchar(255)
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										ServerAdress
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										varchar(255)
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										UniversalAppIndex
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										varchar(255)
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										VirtualType
-									</h5>
-								</div>
-								<div className="col-sm-2" >
-									<h5 className="col-form-text" >
-										varchar(255)
-									</h5>
-								</div>
-								<div className="col-sm-2 anon-box" >
-									<Select options={anonType} />
-								</div>
-							</div>
+						<h3>Choose your data settings:</h3>
 							<br/>
-									<div className="viewmore-col">
-										<button className="btn viewmore-button dropdown-toggle" type="button" data-toggle="dropdown">View more &#9662;</button>
-									</div>
-						</form>
+							<AppPage2 />
+							<br/>
+								<div className="viewmore-col">
+									<button className="btn viewmore-button dropdown-toggle" type="button" data-toggle="dropdown">View more &#9662;</button>
+								</div>
 						<div className="next-col">
 							<button className="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Next</button>
 						</div>
@@ -300,32 +127,16 @@ export default class ApplicationComponent extends React.PureComponent {
 			jsxpage =
 				<>
 					<div className="jumbotron">
-						<h3 style={{ marginBottom: 30 }}>Enter destination Address:</h3>
-						<form >
-							<div className="form-group row">
-								<div className="col-sm-2" >
-									<label className="col-form-label" >
-										File Format:
-									</label>
-								</div>
-								<div className="col-sm-4" >
-									<Select options={fileFormat} />
-								</div>
-							</div>
-							<div className="form-group row">
-								<div className="col-sm-2">
-									<label style={{ minWidth: 50 }}>Destination Link Address:</label>
-								</div>
-								<div className="col-sm-4">
-									<input className="form-control" placeholder="Enter link address" />
-								</div>
-							</div>
-						</form>
+						<h3>Enter destination Address:</h3>
+						<br/>
+						<AppPage3 />
 						<div className="next-col">
-							<button className="btn finish-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.createNotification('success')}>Create Record</button>
+							<button className="btn finish-button dropdown-toggle" type="button" data-toggle="dropdown"
+							 onClick={this.createNotification('success')}>Create Record</button>
 							<NotificationContainer />
 							{this.state.isVisible && (
-							<button className="btn next-button2 dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Finish</button>
+								<button className="btn next-button2 dropdown-toggle" type="button" data-toggle="dropdown" 
+								onClick={this.NextButtonHandler}>Finish</button>
 							)}
 						</div>
 					</div>
@@ -333,8 +144,6 @@ export default class ApplicationComponent extends React.PureComponent {
 		}
 
 		return (
-
-
 			<div className="reports">
 				<div key="reports" className="reports-page ui-view main">
 					<div className="ng-scope">
@@ -345,7 +154,6 @@ export default class ApplicationComponent extends React.PureComponent {
 							{jsxpage}
 
 					</div>
-
 				</div>
 			</div>
 
