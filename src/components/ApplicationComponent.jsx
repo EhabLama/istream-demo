@@ -99,8 +99,8 @@ export default class ApplicationComponent extends React.PureComponent {
 						<h3 style={{ marginBottom: 30 }}>Enter your data type and source:</h3>
 						<form >
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
+								<div className="col-sm-2" >
+									<label className="col-form-label" >
 										File Format:
 									</label>
 								</div>
@@ -111,16 +111,16 @@ export default class ApplicationComponent extends React.PureComponent {
 								</div>
 							</div>
 							<div className="form-group row">
-								<div className="col-sm-1">
+								<div className="col-sm-2">
 									<label style={{ minWidth: 50 }}>Srouce Link Address:</label>
 								</div>
 								<div className="col-sm-4">
-									<input class="form-control" placeholder="Enter link address" />
+									<input className="form-control" placeholder="Enter link address" />
 								</div>
 							</div>
 						</form>
 						<div className="next-col">
-							<button class="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Next</button>
+							<button className="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Next</button>
 						</div>
 
 					</div>
@@ -135,73 +135,162 @@ export default class ApplicationComponent extends React.PureComponent {
 						<h3 style={{ marginBottom: 30 }}>Choose your data settings:</h3>
 						<form >
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
-										First Name
-									</label>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										XDRID
+									</h5>
 								</div>
 								<div className="col-sm-2" >
-									<Select options={dataType} />
+									<h5 className="col-form-text" >
+										bigint
+									</h5>
 								</div>
-								<div className="col-sm-2" >
+								<div className="col-sm-2 anon-box" >
 									<Select options={anonType} />
 								</div>
 							</div>
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
-										Last Name
-								</label>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										XDRTYPE
+								</h5>
 								</div>
 								<div className="col-sm-2" >
-									<Select options={dataType} />
+									<h5 className="col-form-text" >
+										int
+									</h5>
 								</div>
-								<div className="col-sm-2" >
+								<div className="col-sm-2 anon-box" >
 									<Select options={anonType} />
 								</div>
 							</div>
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
-										Age
-									</label>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										SessionStartTime
+									</h5>
 								</div>
 								<div className="col-sm-2" >
-									<Select options={dataType} />
+									<h5 className="col-form-text" >
+										varchar(255)
+									</h5>
 								</div>
-								<div className="col-sm-2" >
+								<div className="col-sm-2 anon-box" >
 									<Select options={anonType} />
 								</div>
 							</div>
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
-										IC Number
-									</label>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										SessionEndTime
+									</h5>
 								</div>
 								<div className="col-sm-2" >
-									<Select options={dataType} />
+									<h5 className="col-form-text" >
+										varchar(255)
+									</h5>
 								</div>
-								<div className="col-sm-2" >
+								<div className="col-sm-2 anon-box" >
 									<Select options={anonType} />
 								</div>
 							</div>
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
-										Phone Number
-									</label>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										Status
+									</h5>
 								</div>
 								<div className="col-sm-2" >
-									<Select options={dataType} />
+									<h5 className="col-form-text" >
+										int
+									</h5>
 								</div>
-								<div className="col-sm-2" >
+								<div className="col-sm-2 anon-box" >
 									<Select options={anonType} />
 								</div>
 							</div>
+							<div className="form-group row">
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										ErrorCode
+									</h5>
+								</div>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										int
+									</h5>
+								</div>
+								<div className="col-sm-2 anon-box" >
+									<Select options={anonType} />
+								</div>
+							</div>
+							<div className="form-group row">
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										ClientAdress
+									</h5>
+								</div>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										varchar(255)
+									</h5>
+								</div>
+								<div className="col-sm-2 anon-box" >
+									<Select options={anonType} />
+								</div>
+							</div>
+							<div className="form-group row">
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										ServerAdress
+									</h5>
+								</div>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										varchar(255)
+									</h5>
+								</div>
+								<div className="col-sm-2 anon-box" >
+									<Select options={anonType} />
+								</div>
+							</div>
+							<div className="form-group row">
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										UniversalAppIndex
+									</h5>
+								</div>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										varchar(255)
+									</h5>
+								</div>
+								<div className="col-sm-2 anon-box" >
+									<Select options={anonType} />
+								</div>
+							</div>
+							<div className="form-group row">
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										VirtualType
+									</h5>
+								</div>
+								<div className="col-sm-2" >
+									<h5 className="col-form-text" >
+										varchar(255)
+									</h5>
+								</div>
+								<div className="col-sm-2 anon-box" >
+									<Select options={anonType} />
+								</div>
+							</div>
+							<br/>
+									<div className="viewmore-col">
+										<button className="btn viewmore-button dropdown-toggle" type="button" data-toggle="dropdown">View more &#9662;</button>
+									</div>
 						</form>
 						<div className="next-col">
-							<button class="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Next</button>
+							<button className="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Next</button>
 						</div>
 					</div>
 				</>
@@ -212,12 +301,10 @@ export default class ApplicationComponent extends React.PureComponent {
 				<>
 					<div className="jumbotron">
 						<h3 style={{ marginBottom: 30 }}>Enter destination Address:</h3>
-						<br />
-						<br />
 						<form >
 							<div className="form-group row">
-								<div className="col-sm-1" >
-									<label class="col-form-label" >
+								<div className="col-sm-2" >
+									<label className="col-form-label" >
 										File Format:
 									</label>
 								</div>
@@ -226,19 +313,19 @@ export default class ApplicationComponent extends React.PureComponent {
 								</div>
 							</div>
 							<div className="form-group row">
-								<div className="col-sm-1">
+								<div className="col-sm-2">
 									<label style={{ minWidth: 50 }}>Destination Link Address:</label>
 								</div>
 								<div className="col-sm-4">
-									<input class="form-control" placeholder="Enter link address" />
+									<input className="form-control" placeholder="Enter link address" />
 								</div>
 							</div>
 						</form>
 						<div className="next-col">
-							<button class="btn finish-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.createNotification('success')}>Finish</button>
+							<button className="btn finish-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.createNotification('success')}>Create Record</button>
 							<NotificationContainer />
 							{this.state.isVisible && (
-							<button class="btn next-button dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler} style = {{marginLeft:450}}>Next</button>
+							<button className="btn next-button2 dropdown-toggle" type="button" data-toggle="dropdown" onClick={this.NextButtonHandler}>Finish</button>
 							)}
 						</div>
 					</div>
@@ -255,7 +342,7 @@ export default class ApplicationComponent extends React.PureComponent {
 						<h2>Application <small>Pariatur id exercitation in commodo occaecat anim esse pariatur.</small></h2>
 						<i className="fa fa-dashboard bg-fade"></i>
 
-						{jsxpage}
+							{jsxpage}
 
 					</div>
 
